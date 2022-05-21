@@ -1,0 +1,89 @@
+/*COLORS*/
+@import './colors';
+
+/*MIXINS*/
+@import './mixins';
+
+@media(min-width: 576px) {
+
+    /*HEADER*/
+    .header {
+        &__text {
+            .company-name {
+                font-size: 5rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            .header-button {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__media {
+            .header-icon {
+                img {
+                    height: 40px;
+                    transition: transform .3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    /*HEADER*/
+
+    /*NAVIGATION-MOBILE*/
+    .nav-mobile {
+        display: none;
+    }
+
+    /*NAVIGATION-DESKTOP*/
+    .nav-desktop {
+        display: flex;
+
+        &__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                transition: color .3s;
+
+                &:hover {
+                     color: $accentColor;
+                }
+
+            }
+        }
+    }
+
+    .header {
+        &__img {
+            background-image: url('../img/header/header_big.jpeg');
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+
+        &__text {
+            grid-column: 1/2;
+            grid-row: 1/3;
+
+            .company-name,
+            p {
+                margin-top: auto;
+            }
+        }
+
+        &__media {
+            grid-column: 1/2;
+        }
+    }
+}

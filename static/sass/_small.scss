@@ -1,0 +1,17 @@
+/*COLORS*/
+@import './colors';
+
+/*MIXINS*/
+@import './mixins';
+
+@media(min-width: 375px) {
+    /*HEADER*/ 
+    .header {
+
+        &__text {
+            .company-name {
+                font-size: 4rem;
+            }
+        }
+    }
+}
