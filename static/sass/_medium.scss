@@ -9,6 +9,7 @@
     /*HEADER*/
     .header {
         &__text {
+            padding: 0.5em 2em;
             .company-name {
                 font-size: 5rem;
             }
@@ -19,6 +20,11 @@
 
             .header-button {
                 font-size: 1.5rem;
+
+                &:hover::after,
+                &:focus:after {
+                    transform: scale(1.5, 1.9);
+                }
             }
         }
 
@@ -33,6 +39,18 @@
                     }
                 }
             }
+        }
+    }
+
+     /*MAIN*/
+    /*APARTAMENTS*/ 
+    .apartaments {
+        &__heading {
+            font-size: 4rem;
+        }
+
+        &__description {
+            font-size: 1.5rem;
         }
     }
 }
@@ -73,6 +91,7 @@
         }
 
         &__text {
+            padding: 0.5em 3em;
             grid-column: 1/2;
             grid-row: 1/3;
 
@@ -84,6 +103,26 @@
 
         &__media {
             grid-column: 1/2;
+        }
+    }
+
+    /*MAIN*/
+    /*APARTAMENTS*/ 
+    .apartaments {
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr;
+
+            &--left {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            &--right {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
         }
     }
 }

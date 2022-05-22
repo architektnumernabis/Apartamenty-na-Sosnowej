@@ -4,13 +4,28 @@
 /*MIXINS*/
 @import './mixins';
 
-/*HAMBURGER-ICON*/
 
-
-
-/*OHTERS*/
+/*OTHERS*/
 .wrapper {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+}
+
+.section-padding {
+    padding: 6em 2em;
+}
+
+
+/*BREAKPOINTS*/ 
+@media(min-width: 576px) {
+    .section-padding {
+        padding: 7em 2em;
+    }
+}
+
+@media(min-width: 992px) {
+    .section-padding {
+        padding: 9em 2em;
+    }
 }

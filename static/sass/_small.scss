@@ -5,13 +5,31 @@
 @import './mixins';
 
 @media(min-width: 375px) {
-    /*HEADER*/ 
+
+    /*HEADER*/
     .header {
 
         &__text {
+            background-image: url('../img/header/home.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
             .company-name {
                 font-size: 4rem;
             }
+        }
+    }
+
+    /*MAIN*/
+    /*APARTAMENTS*/
+    .apartaments {
+        &__heading {
+            font-size: 3rem;
+        }
+
+        &__description {
+            font-size: 1.2rem;
         }
     }
 }

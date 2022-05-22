@@ -1,0 +1,15 @@
+/*COLORS*/
+@import './colors';
+
+/*MIXINS*/
+@import './mixins';
+
+@media(min-width: 1200px) {
+
+    /*HEADER*/
+    .header {
+        &__text {
+            padding: 0.5em 5em;
+        }
+    }
+}

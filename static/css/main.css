@@ -11,12 +11,28 @@
 /*COMPONENTS*/
 /*COLORS*/
 /*MIXINS*/
-/*HAMBURGER-ICON*/
-/*OHTERS*/
+/*OTHERS*/
 .wrapper {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+/*BREAKPOINTS*/
+@media (min-width: 576px) {
+  .section-padding {
+    padding: 7em 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-padding {
+    padding: 9em 2em;
+  }
 }
 
 /*COLORS*/
@@ -204,7 +220,7 @@ body {
 }
 
 .nav-mobile-items {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -244,6 +260,7 @@ body {
 /*NAVIGATION-DESKTOP*/
 .nav-desktop {
   display: none;
+  padding: 0 10em;
 }
 
 /*HEADER*/
@@ -288,18 +305,18 @@ body {
       grid-template-rows: repeat(3, 1fr);
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   padding: 0 1em;
 }
@@ -366,8 +383,8 @@ body {
 
 .header__media {
   position: absolute;
-  bottom: 2px;
-  right: 2px;
+  bottom: 4px;
+  right: 4px;
 }
 
 .header__media .header-icon {
@@ -375,7 +392,42 @@ body {
 }
 
 /*MAIN*/
-.section {
+/*APARTAMENTS*/
+.apartaments {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(rgba(255, 255, 255, 0.68)), to(#fff)), url("../img/apartaments/apartaments_big.jpeg");
+  background-image: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.68), #fff), url("../img/apartaments/apartaments_big.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.apartaments__box {
+  display: -ms-grid;
+  display: grid;
+  gap: 5em;
+}
+
+.apartaments__box--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.apartaments__box--right .apartament-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.apartaments__heading {
+  text-align: center;
+  padding: 0 0 1em 0;
+  font-size: 2rem;
+}
+
+/*APARTAMENTS-DETAILS*/
+.apartaments-details {
   height: 100vh;
 }
 
@@ -384,8 +436,22 @@ body {
 /*MIXINS*/
 @media (min-width: 375px) {
   /*HEADER*/
+  .header__text {
+    background-image: url("../img/header/home.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .header__text .company-name {
     font-size: 4rem;
+  }
+  /*MAIN*/
+  /*APARTAMENTS*/
+  .apartaments__heading {
+    font-size: 3rem;
+  }
+  .apartaments__description {
+    font-size: 1.2rem;
   }
 }
 
@@ -393,6 +459,9 @@ body {
 /*MIXINS*/
 @media (min-width: 576px) {
   /*HEADER*/
+  .header__text {
+    padding: 0.5em 2em;
+  }
   .header__text .company-name {
     font-size: 5rem;
   }
@@ -401,6 +470,10 @@ body {
   }
   .header__text .header-button {
     font-size: 1.5rem;
+  }
+  .header__text .header-button:hover::after, .header__text .header-button:focus:after {
+    -webkit-transform: scale(1.5, 1.9);
+            transform: scale(1.5, 1.9);
   }
   .header__media .header-icon img {
     height: 40px;
@@ -412,6 +485,14 @@ body {
   .header__media .header-icon img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  /*MAIN*/
+  /*APARTAMENTS*/
+  .apartaments__heading {
+    font-size: 4rem;
+  }
+  .apartaments__description {
+    font-size: 1.5rem;
   }
 }
 
@@ -455,6 +536,7 @@ body {
     grid-row: 1/3;
   }
   .header__text {
+    padding: 0.5em 3em;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -470,6 +552,41 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+  }
+  /*MAIN*/
+  /*APARTAMENTS*/
+  .apartaments__box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .apartaments__box--left {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .apartaments__box--right {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+/*COLORS*/
+/*MIXINS*/
+@media (min-width: 1200px) {
+  /*HEADER*/
+  .header__text {
+    padding: 0.5em 5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
