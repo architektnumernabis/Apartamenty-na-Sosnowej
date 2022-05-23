@@ -31,6 +31,8 @@ body {
     justify-content: space-between;
     z-index: 11;
     width: 100%;
+    transition: background-color .3s;
+    //background-color: $darker-shadow;
 
     a {
         text-decoration: none;
@@ -40,6 +42,10 @@ body {
         padding: 0.5em;
         font-size: 1.5rem;
     }
+}
+
+.black {
+    background-color: $darker-shadow;
 }
 
 .nav-mobile {
@@ -97,10 +103,7 @@ body {
     }
 
     &__shadow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .5);
+        @include shadow($light-shadow);
     }
 
     &__text {
@@ -203,9 +206,69 @@ body {
     }
 }
 
+
 /*APARTAMENTS-DETAILS*/
 .apartaments-details {
-    height: 100vh;
+    position: relative;
+    background-image: url('../img/apartaments/apartaments_description_small.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+
+    &__shadow {
+        @include shadow($dark-shadow);
+        z-index: -1;
+    }
+
+    &__heading {
+        padding-top: 1.5em;
+        font-size: 2rem;
+        color: $whiteColor;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        display: grid;
+        gap: 3em;
+
+        &--left {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            color: $whiteColor;
+
+            i {
+                padding: 2em 0.1em;
+                text-align: center;
+
+                &::before {
+                    background-color: $accentColor;
+                    border-radius: 8px;
+                    padding: 5px;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &--right {
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+/*CONTACT*/
+.contact {
+    height: 50vh;
 }
 
 /*BREAKPOINTS*/

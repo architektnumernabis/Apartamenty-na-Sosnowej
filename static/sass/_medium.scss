@@ -10,6 +10,7 @@
     .header {
         &__text {
             padding: 0.5em 2em;
+
             .company-name {
                 font-size: 5rem;
             }
@@ -42,8 +43,8 @@
         }
     }
 
-     /*MAIN*/
-    /*APARTAMENTS*/ 
+    /*MAIN*/
+    /*APARTAMENTS*/
     .apartaments {
         &__heading {
             font-size: 4rem;
@@ -51,6 +52,55 @@
 
         &__description {
             font-size: 1.5rem;
+        }
+    }
+
+    /*APARTAMENTS-DETAILS*/
+    .apartaments-details {
+
+        &__heading {
+            font-size: 4rem;
+        }
+
+        &__box {
+            &--left {
+                i {
+                    &::before {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+
+    /*APARTAMENTS-DETAILS*/
+    .apartaments-details {
+        &__box {
+            &--left {
+                padding: 0 2em;
+
+                i {
+                    padding: 3em 1em;
+
+                    &::before {
+                        font-size: 3.5rem;
+                        padding: 9px;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        margin-top: 20px;
+
+                    }
+                }
+            }
         }
     }
 }
@@ -76,7 +126,7 @@
                 transition: color .3s;
 
                 &:hover {
-                     color: $accentColor;
+                    color: $accentColor;
                 }
 
             }
@@ -107,11 +157,11 @@
     }
 
     /*MAIN*/
-    /*APARTAMENTS*/ 
+    /*APARTAMENTS*/
     .apartaments {
         &__box {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
 
             &--left {
@@ -122,6 +172,40 @@
             &--right {
                 grid-column: 1/2;
                 grid-row: 1/2;
+            }
+        }
+    }
+
+    /*APARTAMENTS-DETAILS*/
+    .apartaments-details {
+        background-image: url('../img/apartaments/apartaments_description_big.jpeg');
+
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3em;
+
+            &--left {
+
+                i {
+                    padding: 2em 1em;
+
+                    &::before {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        //margin-left: 8px;
+                    }
+                }
+            }
+
+            &--right {
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                }
             }
         }
     }
