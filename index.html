@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <!--LIGHTBOX GALLERY-->
+    <link rel="stylesheet" href="./static/css/lightbox.min.css">
+    <script src="./static/js/lightbox-plus-jquery.min.js"></script>
     <!--MY STYLES-->
     <link rel="stylesheet" href="./static/css/main.css">
     <!--FONT AWESOME-->
@@ -30,7 +33,7 @@
     <div class="nav nav-mobile-items">
         <a class="nav-mobile-item" href="#apartaments">apartamenty</a>
         <a class="nav-mobile-item" href="#atrakcje">atrakcje</a>
-        <a class="nav-mobile-item" href="#galeria">galeria</a>
+        <a class="nav-mobile-item" href="#gallery">galeria</a>
         <a class="nav-mobile-item" href="#kontakt">kontakt</a>
     </div>
 
@@ -40,7 +43,7 @@
         <div class="nav-desktop__links">
             <a href="#apartaments">apartamenty</a>
             <a href="#atrakcje">atrakcje</a>
-            <a href="#galeria">galeria</a>
+            <a href="#gallery">galeria</a>
             <a href="#kontakt">kontakt</a>
         </div>
     </nav>
@@ -52,8 +55,9 @@
         </div>
         <div class="header__text">
             <h1 class="company-name">Apartamenty na Sosnowej</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quaerat esse atque magni nemo quod
-                suscipit ullam nisi ipsam similique (Tutaj będzie krótki opis).</p>
+            <p>Poszukujesz noclegu w Zatorze? <br>
+                Chcesz spędzić czas w parku rozrywki Energylandia? <br>
+                Jesteś we właściwym miejscu!</p>
             <a href="#apartaments" class="header-button">Dowiedz się więcej</a>
         </div>
         <div class="header__media">
@@ -69,7 +73,9 @@
             <div class="wrapper">
                 <div class="apartaments__box">
                     <div class="apartaments__box--left">
+                        <div class="underline"></div>
                         <h2 class="apartaments__heading">Apartamenty</h2>
+
                         <p class="apartaments__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
                             quos quis impedit optio ut beatae a velit corporis quo explicabo? Dicta quibusdam sed ut.
                             Incidunt enim omnis expedita dolorum esse porro. Tenetur adipisci aliquam rerum quo et, illo
@@ -94,7 +100,9 @@
         <section class="apartaments-details">
             <div class="apartaments-details__shadow"></div>
             <div class="wrapper">
+
                 <h2 class="apartaments-details__heading">Co oferujemy?</h2>
+                <div class="underline"></div>
                 <div class="apartaments-details__box section-padding">
                     <div class="apartaments-details__box--left">
                         <i class="fa-solid fa-shower">
@@ -121,6 +129,21 @@
                             alt="Zdjęcie przedstawiające apartament z zewnątrz">
                     </div>
 
+                </div>
+            </div>
+        </section>
+        <!--GALLERY-->
+        <section class="gallery section-padding" id="gallery">
+            <div class="wrapper">
+                <h2 class="gallery__heading">Galeria</h2>
+                <div class="underline"></div>
+                <div class="gallery__box">
+                    <a class="gallery__box--one" href="./static/img/gallery/01_big.jpeg" data-lightbox="mygallery"><img src="./static/img/gallery/01_small.jpeg" alt=""></a>
+                    <a class="gallery__box--two" href="./static/img/gallery/01_big.jpeg" data-lightbox="mygallery"><img src="./static/img/gallery/01_small.jpeg" alt=""></a>
+                    <a class="gallery__box--three" href="./static/img/gallery/01_big.jpeg" data-lightbox="mygallery"><img src="./static/img/gallery/01_small.jpeg" alt=""></a>
+                    <a class="gallery__box--four" href="./static/img/gallery/01_big.jpeg" data-lightbox="mygallery"><img src="./static/img/gallery/01_small.jpeg" alt=""></a>
+                    <a class="gallery__box--five" href="./static/img/gallery/01_big.jpeg" data-lightbox="mygallery"><img src="./static/img/gallery/01_small.jpeg" alt=""></a>
+                    <a class="gallery__box--six" href="./static/img/gallery/01_big.jpeg" data-lightbox="mygallery"><img src="./static/img/gallery/01_small.jpeg" alt=""></a>
                 </div>
             </div>
         </section>
