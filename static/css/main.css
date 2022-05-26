@@ -20,7 +20,7 @@
 }
 
 .section-padding {
-  padding: 6em 2em;
+  padding: 4em 2em;
 }
 
 /*BREAKPOINTS*/
@@ -520,7 +520,7 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 0.5em;
-  padding-top: 2em;
+  padding-top: 4em;
 }
 
 .gallery__box a img {
@@ -544,6 +544,80 @@ body {
 
 /*CONTACT*/
 .contact {
+  position: relative;
+  background-image: url("../img/contact/contact_mini.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 100;
+  color: #fff;
+}
+
+.contact__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.contact__heading {
+  padding-top: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact__box {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  text-align: center;
+  padding: 4em 0;
+}
+
+.contact i {
+  display: inline-block;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.contact i::before {
+  cursor: pointer;
+  background-color: #ff4141;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 2rem;
+}
+
+.contact i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contact i:hover ~ p {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.contact a {
+  cursor: default;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact a p {
+  padding-top: 15px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+/*REACH-US*/
+.reach-us {
   height: 50vh;
 }
 
@@ -577,6 +651,18 @@ body {
   /*GALLERY*/
   .gallery__heading {
     font-size: 3rem;
+  }
+  /*CONTACT*/
+  .contact__heading {
+    font-size: 3rem;
+  }
+  .contact__box {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 5em 1em;
+  }
+  .contact__box i::before {
+    font-size: 2.5rem;
   }
 }
 
@@ -641,6 +727,22 @@ body {
   /*GALLERY*/
   .gallery__heading {
     font-size: 4rem;
+  }
+  .gallery__box {
+    padding-top: 7em;
+  }
+  /*CONTACT*/
+  .contact__heading {
+    font-size: 4rem;
+  }
+  .contact__box {
+    padding: 6em 1em;
+  }
+  .contact__box i::before {
+    font-size: 3.5rem;
+  }
+  .contact__box p {
+    font-size: 1.2rem;
   }
 }
 
@@ -716,6 +818,17 @@ body {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+  }
+  /*CONTACT*/
+  .contact__box {
+    padding: 7em 1em;
+  }
+  .contact__box i::before {
+    font-size: 4.5rem;
+  }
+  .contact__box a p {
+    font-size: 1.5rem;
+    padding-top: 20px;
   }
 }
 
@@ -826,6 +939,17 @@ body {
     width: 100%;
     border-radius: 8px;
   }
+  /*GALLERY*/
+  .gallery__box {
+    padding-top: 9em;
+  }
+  /*CONTACT*/
+  .contact {
+    background-image: url("../img/contact/contact_big.jpeg");
+  }
+  .contact__box {
+    padding: 8em 1em;
+  }
 }
 
 /*COLORS*/
@@ -835,6 +959,10 @@ body {
   /*HEADER*/
   .header__text {
     padding: 0.5em 5em;
+  }
+  /*CONTACT*/
+  .contact__box {
+    padding: 10em 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

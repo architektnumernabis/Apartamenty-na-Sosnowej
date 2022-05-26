@@ -91,6 +91,31 @@
         &__heading {
             font-size: 4rem;
         }
+
+        &__box {
+            padding-top: 7em;
+        }
+    }
+
+    /*CONTACT*/
+    .contact {
+        &__heading {
+            font-size: 4rem;
+        }
+
+        &__box {
+            padding: 6em 1em;
+
+            i {
+                &::before {
+                    font-size: 3.5rem;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 
@@ -158,6 +183,26 @@
             &--six {
                 grid-column: 2/3;
                 grid-row: 3/4;
+            }
+        }
+    }
+
+    /*CONTACT*/
+    .contact {
+        &__box {
+            padding: 7em 1em;
+
+            i {
+                &::before {
+                    font-size: 4.5rem;
+                }
+            }
+
+            a {
+                p {
+                    font-size: 1.5rem;
+                    padding-top: 20px;
+                }
             }
         }
     }
@@ -265,6 +310,22 @@
                     border-radius: 8px;
                 }
             }
+        }
+    }
+
+    /*GALLERY*/
+    .gallery {
+        &__box {
+            padding-top: 9em;
+        }
+    }
+
+    /*CONTACT*/
+    .contact {
+        background-image: url('../img/contact/contact_big.jpeg');
+
+        &__box {
+            padding: 8em 1em;
         }
     }
 }

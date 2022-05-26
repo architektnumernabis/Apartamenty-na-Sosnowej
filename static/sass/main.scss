@@ -288,7 +288,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5em;
-        padding-top: 2em;
+        padding-top: 4em;
 
         a {
             img {
@@ -310,6 +310,68 @@ body {
 
 /*CONTACT*/
 .contact {
+    position: relative;
+    background-image: url('../img/contact/contact_mini.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 100;
+    color: $whiteColor;
+
+    &__shadow {
+        @include shadow($dark-shadow);
+        z-index: -1;
+    }
+
+    &__heading {
+        padding-top: 1.5em;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__box {
+        display: grid;
+        gap: 2em;
+        text-align: center;
+        padding: 4em 0;
+    }
+
+    i {
+        display: inline-block;
+        transition: transform .3s;
+
+        &::before {
+            cursor: pointer;
+            background-color: $accentColor;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 2rem;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &:hover ~ p {
+            transform: translateY(10px);
+        }
+    }
+
+    a {
+        cursor: default;
+        text-decoration: none;
+        color: $whiteColor;
+
+        p {
+            padding-top: 15px;
+            transition: transform .3s;
+        }
+    }
+}
+
+/*REACH-US*/
+.reach-us {
     height: 50vh;
 }
 
