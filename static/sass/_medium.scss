@@ -408,10 +408,10 @@
         }
     }
 
-    /*FOOTER*/ 
+    /*FOOTER*/
     .footer {
         &__box {
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 0;
 
             &--logo {
