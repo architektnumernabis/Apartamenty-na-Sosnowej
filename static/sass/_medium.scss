@@ -117,6 +117,57 @@
             }
         }
     }
+
+    /*REACH-US*/
+    .reach-us {
+        &__box {
+            &--right {
+                .contact-form {
+                    .contact-form-top {
+                        h3 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*FOOTER*/
+    .footer {
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 0.5fr 1fr;
+
+            &--logo {
+                grid-column: 1/3;
+                grid-row: 1/2;
+            }
+
+            &--social {
+                //align-items: start;
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            &--menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                padding: 2em;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
 }
 
 @media(min-width: 768px) {
@@ -202,6 +253,34 @@
                 p {
                     font-size: 1.5rem;
                     padding-top: 20px;
+                }
+            }
+        }
+    }
+
+    /*REACH-US*/
+    .reach-us {
+        &__box {
+            grid-template-columns: repeat(2, 1fr);
+
+            &--left {
+                grid-column: 1/2;
+            }
+
+            &--right {
+                grid-column: 2/3;
+
+                .contact-form {
+                    height: 100%;
+
+                    .contact-form-textarea {
+                        height: 70%;
+                    }
+
+                    .submit {
+                        right: 20px;
+                        bottom: 20px;
+                    }
                 }
             }
         }
@@ -326,6 +405,28 @@
 
         &__box {
             padding: 8em 1em;
+        }
+    }
+
+    /*FOOTER*/ 
+    .footer {
+        &__box {
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 0;
+
+            &--logo {
+                align-items: center;
+                justify-content: center;
+                grid-column: 1/2;
+            }
+
+            &--social {
+                grid-column: 2/3;
+            }
+
+            &--menu {
+                grid-column: 3/4;
+            }
         }
     }
 }
