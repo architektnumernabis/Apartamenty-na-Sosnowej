@@ -6,6 +6,13 @@
 
 @media(min-width: 576px) {
 
+    /*NAVIGATION-MOBILE*/
+    .nav-mobile-items {
+        a {
+            font-size: 2rem;
+        }
+    }
+
     /*HEADER*/
     .header {
         &__text {
@@ -55,9 +62,6 @@
     /*MAIN*/
     /*APARTAMENTS*/
     .apartaments {
-        &__heading {
-            font-size: 4rem;
-        }
 
         &__description {
             font-size: 1.5rem;
@@ -66,10 +70,6 @@
 
     /*APARTAMENTS-DETAILS*/
     .apartaments-details {
-
-        &__heading {
-            font-size: 4rem;
-        }
 
         &__box {
             &--left {
@@ -88,9 +88,6 @@
 
     /*GALLERY*/
     .gallery {
-        &__heading {
-            font-size: 4rem;
-        }
 
         &__box {
             padding-top: 7em;
@@ -99,12 +96,8 @@
 
     /*CONTACT*/
     .contact {
-        &__heading {
-            font-size: 4rem;
-        }
-
         &__box {
-            padding: 6em 1em;
+            padding: 6em 1em 8em 1em;
 
             i {
                 &::before {
@@ -171,6 +164,13 @@
 }
 
 @media(min-width: 768px) {
+
+    /*NAVIGATION-MOBILE*/
+    .nav-mobile-items {
+        a {
+            font-size: 2.5rem;
+        }
+    }
 
     /*APARTAMENTS-DETAILS*/
     .apartaments-details {
@@ -241,7 +241,7 @@
     /*CONTACT*/
     .contact {
         &__box {
-            padding: 7em 1em;
+            padding: 7em 1em 10em 1em;
 
             i {
                 &::before {
@@ -404,7 +404,7 @@
         background-image: url('../img/contact/contact_big.jpeg');
 
         &__box {
-            padding: 8em 1em;
+            padding: 8em 1em 11em 1em;
         }
     }
 

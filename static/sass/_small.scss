@@ -24,39 +24,18 @@
     /*MAIN*/
     /*APARTAMENTS*/
     .apartaments {
-        &__heading {
-            font-size: 3rem;
-        }
 
         &__description {
             font-size: 1.2rem;
         }
     }
 
-    /*APARTAMENTS-DETAILS*/
-    .apartaments-details {
-        &__heading {
-            font-size: 3rem;
-        }
-    }
-
-    /*GALLERY*/
-    .gallery {
-        &__heading {
-            font-size: 3rem;
-        }
-    }
-
     /*CONTACT*/
     .contact {
-        &__heading {
-            font-size: 3rem;
-        }
-
         &__box {
             grid-template-columns: repeat(3, 1fr);
-            padding: 5em 1em;
-
+            padding: 5em 1em 6em 1em;
+    
             i {
                 &::before {
                     font-size: 2.5rem;

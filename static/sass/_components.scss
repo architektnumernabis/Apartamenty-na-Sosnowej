@@ -16,11 +16,24 @@
     padding: 4em 2em;
 }
 
+.section-heading {
+    font-size: 2rem;
+}
 
 /*BREAKPOINTS*/
+@media(min-width: 375px) {
+    .section-heading {
+        font-size: 3rem;
+    }
+}
+
 @media(min-width: 576px) {
     .section-padding {
         padding: 7em 2em;
+    }
+
+    .section-heading {
+        font-size: 4rem;
     }
 }
 

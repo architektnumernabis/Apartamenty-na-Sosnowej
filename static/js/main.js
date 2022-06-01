@@ -1,7 +1,8 @@
 const navMobile = document.querySelector('.nav-mobile-items')
 const burgerIcon = document.querySelector('.hamburger')
 const navMobileItems = document.querySelectorAll('.nav-mobile-item')
-const navbar = document.querySelectorAll('.nav');
+const navbar = document.querySelectorAll('.nav')
+const footerYear = document.querySelector('.footer__year')
 
 //FUNCTION THAT HANDLES MOBILE NAVIGATION
 const handleNav = () => {
@@ -21,7 +22,7 @@ burgerIcon.addEventListener('click', handleNav)
 //FUNCTION THAT CHANGES NAVBA COLOR DEPENDING ON WINDOWSCROLLY
 const navChangeColor = () => {
     navbar.forEach(item => {
-        if (window.scrollY >= 73) {
+        if (window.scrollY >= 73 && !navMobile.classList.contains('active')) {
             item.classList.add('black')
         } else {
             item.classList.remove('black')
@@ -43,3 +44,11 @@ const mobileRemoveBlack = () => {
 }
 
 burgerIcon.addEventListener('click', mobileRemoveBlack)
+
+//FUNCTION THAT CHANGES FOOTER YEAR
+const changeFooterYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year; 
+}
+
+changeFooterYear();

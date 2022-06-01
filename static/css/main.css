@@ -12,6 +12,7 @@
 /*COLORS*/
 /*MIXINS*/
 /*COLORS*/
+/*BREAKPOINTS*/
 /*OTHERS*/
 .wrapper {
   margin: 0 auto;
@@ -23,10 +24,23 @@
   padding: 4em 2em;
 }
 
+.section-heading {
+  font-size: 2rem;
+}
+
 /*BREAKPOINTS*/
+@media (min-width: 375px) {
+  .section-heading {
+    font-size: 3rem;
+  }
+}
+
 @media (min-width: 576px) {
   .section-padding {
     padding: 7em 2em;
+  }
+  .section-heading {
+    font-size: 4rem;
   }
 }
 
@@ -39,6 +53,7 @@
 /*COLORS*/
 /*MIXINS*/
 /*COLORS*/
+/*BREAKPOINTS*/
 /*HAMBURGER-ICON*/
 /*COLORS*/
 /*!
@@ -431,6 +446,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .apartaments__box--right .apartament-image {
@@ -439,10 +455,10 @@ body {
 }
 
 .apartaments__heading {
-  text-transform: uppercase;
-  text-align: center;
   padding: 0 0 1em 0;
-  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*APARTAMENTS-DETAILS*/
@@ -464,8 +480,7 @@ body {
 }
 
 .apartaments-details__heading {
-  padding-top: 1.5em;
-  font-size: 2rem;
+  padding-top: 2em;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -510,9 +525,9 @@ body {
 
 /*GALLERY*/
 .gallery__heading {
-  text-transform: uppercase;
+  color: #000;
   text-align: center;
-  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .gallery__box {
@@ -563,10 +578,10 @@ body {
 }
 
 .contact__heading {
-  padding-top: 1.5em;
-  text-transform: uppercase;
+  padding-top: 2em;
+  color: #fff;
   text-align: center;
-  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .contact__box {
@@ -574,7 +589,7 @@ body {
   display: grid;
   gap: 2em;
   text-align: center;
-  padding: 4em 0;
+  padding: 4em 0 5em 0;
 }
 
 .contact i {
@@ -814,6 +829,7 @@ body {
 /*COLORS*/
 /*MIXINS*/
 /*COLORS*/
+/*BREAKPOINTS*/
 @media (min-width: 375px) {
   /*HEADER*/
   .header__text {
@@ -827,28 +843,14 @@ body {
   }
   /*MAIN*/
   /*APARTAMENTS*/
-  .apartaments__heading {
-    font-size: 3rem;
-  }
   .apartaments__description {
     font-size: 1.2rem;
   }
-  /*APARTAMENTS-DETAILS*/
-  .apartaments-details__heading {
-    font-size: 3rem;
-  }
-  /*GALLERY*/
-  .gallery__heading {
-    font-size: 3rem;
-  }
   /*CONTACT*/
-  .contact__heading {
-    font-size: 3rem;
-  }
   .contact__box {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    padding: 5em 1em;
+    padding: 5em 1em 6em 1em;
   }
   .contact__box i::before {
     font-size: 2.5rem;
@@ -865,7 +867,12 @@ body {
 /*COLORS*/
 /*MIXINS*/
 /*COLORS*/
+/*BREAKPOINTS*/
 @media (min-width: 576px) {
+  /*NAVIGATION-MOBILE*/
+  .nav-mobile-items a {
+    font-size: 2rem;
+  }
   /*HEADER*/
   .header__text {
     padding: 0.5em 2em;
@@ -904,16 +911,10 @@ body {
   }
   /*MAIN*/
   /*APARTAMENTS*/
-  .apartaments__heading {
-    font-size: 4rem;
-  }
   .apartaments__description {
     font-size: 1.5rem;
   }
   /*APARTAMENTS-DETAILS*/
-  .apartaments-details__heading {
-    font-size: 4rem;
-  }
   .apartaments-details__box--left i::before {
     font-size: 2.5rem;
   }
@@ -921,18 +922,12 @@ body {
     font-size: 1.2rem;
   }
   /*GALLERY*/
-  .gallery__heading {
-    font-size: 4rem;
-  }
   .gallery__box {
     padding-top: 7em;
   }
   /*CONTACT*/
-  .contact__heading {
-    font-size: 4rem;
-  }
   .contact__box {
-    padding: 6em 1em;
+    padding: 6em 1em 8em 1em;
   }
   .contact__box i::before {
     font-size: 3.5rem;
@@ -998,6 +993,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  /*NAVIGATION-MOBILE*/
+  .nav-mobile-items a {
+    font-size: 2.5rem;
+  }
   /*APARTAMENTS-DETAILS*/
   .apartaments-details__box--left {
     padding: 0 2em;
@@ -1072,7 +1071,7 @@ body {
   }
   /*CONTACT*/
   .contact__box {
-    padding: 7em 1em;
+    padding: 7em 1em 10em 1em;
   }
   .contact__box i::before {
     font-size: 4.5rem;
@@ -1224,7 +1223,7 @@ body {
     background-image: url("../img/contact/contact_big.jpeg");
   }
   .contact__box {
-    padding: 8em 1em;
+    padding: 8em 1em 11em 1em;
   }
   /*FOOTER*/
   .footer__box {
@@ -1259,6 +1258,7 @@ body {
 /*COLORS*/
 /*MIXINS*/
 /*COLORS*/
+/*BREAKPOINTS*/
 @media (min-width: 1200px) {
   /*HEADER*/
   .header__text {

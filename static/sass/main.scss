@@ -201,6 +201,7 @@ body {
         &--right {
             display: flex;
             justify-content: center;
+            position: relative;
 
             .apartament-image {
                 width: 100%;
@@ -210,10 +211,8 @@ body {
     }
 
     &__heading {
-        text-transform: uppercase;
-        text-align: center;
         padding: 0 0 1em 0;
-        font-size: 2rem;
+        @include sectionHeading($blackColor);
     }
 }
 
@@ -233,11 +232,8 @@ body {
     }
 
     &__heading {
-        padding-top: 1.5em;
-        font-size: 2rem;
-        color: $whiteColor;
-        text-align: center;
-        text-transform: uppercase;
+        padding-top: 2em;
+        @include sectionHeading($whiteColor);
     }
 
     &__box {
@@ -280,9 +276,7 @@ body {
 /*GALLERY*/
 .gallery {
     &__heading {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2rem;
+        @include sectionHeading($blackColor);
     }
 
     &__box {
@@ -325,17 +319,15 @@ body {
     }
 
     &__heading {
-        padding-top: 1.5em;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2rem;
+        padding-top: 2em;
+        @include sectionHeading($whiteColor);
     }
 
     &__box {
         display: grid;
         gap: 2em;
         text-align: center;
-        padding: 4em 0;
+        padding: 4em 0 5em 0;
     }
 
     i {

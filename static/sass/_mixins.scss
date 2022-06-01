@@ -8,4 +8,21 @@
     background-color: $shadow;
 }
 
-    
+@mixin sectionHeading ($color) {
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*BREAKPOINTS*/ 
+@media(min-width: 375px) {
+    @mixin sectionHeading {
+        font-size: 3rem;
+    }
+}
+
+@media(min-width: 576px) {
+    @mixin sectionHeading {
+        font-size: 4rem;
+    }
+}
