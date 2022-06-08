@@ -264,6 +264,10 @@ body {
                 text-shadow: 2px 2px 5px rgb(0, 0, 0);
                 z-index: 10;
 
+                &::before {
+                    padding: 10px;
+                }
+
                 &:hover~.text {
                     clip-path: circle(120% at 50% 50%);
                 }

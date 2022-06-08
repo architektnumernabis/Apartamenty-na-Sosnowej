@@ -514,6 +514,10 @@ body {
   z-index: 10;
 }
 
+.freetime__box--right .fa-circle-question::before {
+  padding: 10px;
+}
+
 .freetime__box--right .fa-circle-question:hover ~ .text {
   -webkit-clip-path: circle(120% at 50% 50%);
           clip-path: circle(120% at 50% 50%);
