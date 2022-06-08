@@ -37,6 +37,18 @@
         &__description {
             font-size: 1.1rem;
         }
+
+        &__box {
+            &--right {
+                .text {
+                    .description {
+                        i {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /*CONTACT*/

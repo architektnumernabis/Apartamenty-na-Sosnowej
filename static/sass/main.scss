@@ -215,6 +215,7 @@ body {
             .apartament-image {
                 width: 100%;
                 border-radius: 8px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
             }
         }
     }
@@ -229,6 +230,7 @@ body {
 .freetime {
     background-image: url('../img/atractions/Shiny\ Overlay.svg');
     background-size: cover;
+
     &__box {
         display: grid;
         gap: 2em;
@@ -241,11 +243,70 @@ body {
         }
 
         &--right {
+            position: relative;
+
             img {
+                position: relative;
                 height: 100%;
                 width: 100%;
                 max-height: 300px;
                 border-radius: 8px;
+                box-shadow: 5px 5px 10px $dark-shadow;
+            }
+
+            .fa-circle-question {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                color: $whiteColor;
+                font-size: 2rem;
+                cursor: cell;
+                text-shadow: 2px 2px 5px rgb(0, 0, 0);
+                z-index: 10;
+
+                &:hover~.text {
+                    clip-path: circle(120% at 50% 50%);
+                }
+            }
+
+            .text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $dark-shadow;
+                border-radius: 8px;
+                color: $whiteColor;
+                clip-path: circle(0 at 50% 50%);
+                transition: clip-path .7s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .description {
+                    display: flex;
+                    flex-direction: column;
+
+                    i {
+                        padding: 2em;
+                        font-size: 0.9rem;
+
+                        &::before {
+                            font-size: 2rem;
+                            padding-right: 5px;
+                            color: $accentColor;
+                        }
+
+                        // &::before {
+                        //     cursor: pointer;
+                        //     background-color: $accentColor;
+                        //     border-radius: 8px;
+                        //     padding: 5px;
+                        //     font-size: 2rem;
+                        // }
+                    }
+                }
             }
         }
     }

@@ -461,6 +461,8 @@ body {
 .apartaments__box--right .apartament-image {
   width: 100%;
   border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .apartaments__heading {
@@ -487,11 +489,81 @@ body {
   margin: 0;
 }
 
+.freetime__box--right {
+  position: relative;
+}
+
 .freetime__box--right img {
+  position: relative;
   height: 100%;
   width: 100%;
   max-height: 300px;
   border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.freetime__box--right .fa-circle-question {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: cell;
+  text-shadow: 2px 2px 5px black;
+  z-index: 10;
+}
+
+.freetime__box--right .fa-circle-question:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 50%);
+          clip-path: circle(120% at 50% 50%);
+}
+
+.freetime__box--right .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  color: #fff;
+  -webkit-clip-path: circle(0 at 50% 50%);
+          clip-path: circle(0 at 50% 50%);
+  -webkit-transition: -webkit-clip-path .7s;
+  transition: -webkit-clip-path .7s;
+  transition: clip-path .7s;
+  transition: clip-path .7s, -webkit-clip-path .7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.freetime__box--right .text .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.freetime__box--right .text .description i {
+  padding: 2em;
+  font-size: 0.9rem;
+}
+
+.freetime__box--right .text .description i::before {
+  font-size: 2rem;
+  padding-right: 5px;
+  color: #ff4141;
 }
 
 .freetime__heading {
@@ -907,6 +979,9 @@ body {
   .freetime__description {
     font-size: 1.1rem;
   }
+  .freetime__box--right .text .description i {
+    font-size: 1.1rem;
+  }
   /*CONTACT*/
   .contact__box {
     -ms-grid-columns: (1fr)[3];
@@ -1116,6 +1191,12 @@ body {
     margin-top: 20px;
   }
   /*FREETIME - SUBSITE*/
+  .freetime__box--right .fa-circle-question {
+    font-size: 2.5rem;
+  }
+  .freetime__box--right .text .description i {
+    font-size: 1.2rem;
+  }
   .freetime__heading {
     font-size: 2rem;
   }
@@ -1308,6 +1389,12 @@ body {
   .freetime__box {
     gap: 4em;
     padding: 5em 0;
+  }
+  .freetime__box--right .fa-circle-question {
+    font-size: 3rem;
+  }
+  .freetime__box--right .text .description i {
+    font-size: 1.5rem;
   }
   .freetime__heading {
     font-size: 2.4rem;

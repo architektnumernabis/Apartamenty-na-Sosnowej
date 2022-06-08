@@ -238,6 +238,23 @@
 
     /*FREETIME - SUBSITE*/
     .freetime {
+        &__box {
+            &--right {
+                .fa-circle-question {
+                    font-size: 2.5rem;
+                }
+
+                .text {
+                    .description {
+                        i {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
         &__heading {
             font-size: 2rem;
         }
@@ -419,6 +436,20 @@
         &__box {
             gap: 4em;
             padding: 5em 0;
+
+            &--right {
+                .fa-circle-question {
+                    font-size: 3rem;
+                }
+
+                .text {
+                    .description {
+                        i {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
         }
 
         &__heading {
