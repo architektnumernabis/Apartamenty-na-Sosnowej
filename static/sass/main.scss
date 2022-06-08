@@ -297,14 +297,6 @@ body {
                             padding-right: 5px;
                             color: $accentColor;
                         }
-
-                        // &::before {
-                        //     cursor: pointer;
-                        //     background-color: $accentColor;
-                        //     border-radius: 8px;
-                        //     padding: 5px;
-                        //     font-size: 2rem;
-                        // }
                     }
                 }
             }
@@ -402,6 +394,7 @@ body {
                 object-fit: cover;
                 border-radius: 8px;
                 transition: transform .3s, filter .8s;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
 
                 &:hover {
                     transform: scale(1.03);
@@ -515,6 +508,7 @@ body {
                 border-radius: 8px;
                 height: 100%;
                 width: 80%;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
 
                 .contact-form-top {
                     display: flex;

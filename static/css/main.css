@@ -670,6 +670,8 @@ body {
   transition: -webkit-transform .3s, -webkit-filter .8s;
   transition: transform .3s, filter .8s;
   transition: transform .3s, filter .8s, -webkit-transform .3s, -webkit-filter .8s;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .gallery__box a img:hover {
@@ -797,6 +799,8 @@ body {
   border-radius: 8px;
   height: 100%;
   width: 80%;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .reach-us__box--right .contact-form .contact-form-top {
@@ -1006,6 +1010,9 @@ body {
 /*BREAKPOINTS*/
 @media (min-width: 576px) {
   /*NAVIGATION-MOBILE*/
+  .nav-mobile {
+    padding: 0 2em;
+  }
   .nav-mobile-items a {
     font-size: 2rem;
   }
