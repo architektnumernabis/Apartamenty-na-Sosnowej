@@ -10,14 +10,16 @@
     .header {
 
         &__text {
-            background-image: url('../img/header/home.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
+            @include headerImg('../img/header/home.svg');
 
-            .company-name {
+            .company-name,
+            .freetime-name {
                 font-size: 4rem;
             }
+        }
+
+        &__subsite {
+            @include headerImg('../img/header/thumbs-up.svg');
         }
     }
 
@@ -30,12 +32,19 @@
         }
     }
 
+    /*FREETIME - SUBSITE*/
+    .freetime {
+        &__description {
+            font-size: 1.1rem;
+        }
+    }
+
     /*CONTACT*/
     .contact {
         &__box {
             grid-template-columns: repeat(3, 1fr);
             padding: 5em 1em 6em 1em;
-    
+
             i {
                 &::before {
                     font-size: 2.5rem;
@@ -44,7 +53,7 @@
         }
     }
 
-    /*FOOTER*/ 
+    /*FOOTER*/
     .footer {
         &__box {
             &--social {

@@ -13,7 +13,18 @@
         }
     }
 
-    /*CONTACT*/ 
+    /*FREETIME - SUBSITE*/
+    .freetime {
+        &__box {
+            gap: 5em;
+        }
+
+        &__heading {
+            font-size: 3rem;
+        }
+    }
+
+    /*CONTACT*/
     .contact {
         &__box {
             padding: 10em 1em;

@@ -14,7 +14,14 @@
     text-transform: uppercase;
 }
 
-/*BREAKPOINTS*/ 
+@mixin headerImg ($bgImg) {
+    background-image: url($bgImg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*BREAKPOINTS*/
 @media(min-width: 375px) {
     @mixin sectionHeading {
         font-size: 3rem;
