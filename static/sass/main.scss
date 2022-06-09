@@ -54,6 +54,10 @@ body {
     .nav-active {
         color: $accentColor;
     }
+
+    .invisible {
+        display: none;
+    }
 }
 
 .black {
@@ -256,7 +260,7 @@ body {
 
             .fa-circle-question {
                 position: absolute;
-                top: 5px;
+                top: 10px;
                 right: 5px;
                 color: $whiteColor;
                 font-size: 2rem;

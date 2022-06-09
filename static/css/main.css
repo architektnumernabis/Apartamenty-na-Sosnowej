@@ -243,6 +243,10 @@ body {
   color: #ff4141;
 }
 
+.nav .invisible {
+  display: none;
+}
+
 .black {
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -505,7 +509,7 @@ body {
 
 .freetime__box--right .fa-circle-question {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 5px;
   color: #fff;
   font-size: 2rem;

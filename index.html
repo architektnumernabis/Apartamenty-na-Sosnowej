@@ -32,25 +32,27 @@
         </button>
     </nav>
     <div class="nav nav-mobile-items">
-        <a class="nav-mobile-item" href="#apartaments">apartamenty</a>
+        <a class="nav-mobile-item invisible nav-active" href="#header">to jest niedziałający link, który służy do prawidłowego działania scrollspy na nawigacji, czyli do podświetlania nazw sekcji w której aktualnie się znajdujesz</a>
+        <a class="nav-mobile-item mobile-item" href="#apartaments">apartamenty</a>
         <a class="nav-mobile-item" href="./atrakcje.html">atrakcje</a>
-        <a class="nav-mobile-item" href="#gallery">galeria</a>
-        <a class="nav-mobile-item" href="#contact">kontakt</a>
+        <a class="nav-mobile-item mobile-item" href="#gallery">galeria</a>
+        <a class="nav-mobile-item mobile-item" href="#contact">kontakt</a>
     </div>
 
     <!--NAVIGATION DESKTOP-->
     <nav class="nav nav-desktop">
         <a href="#">logo</a>
         <div class="nav-desktop__links">
-            <a href="#apartaments">apartamenty</a>
+            <a class="nav-item invisible nav-active" href="#header">to jest niedziałający link, który służy do prawidłowego działania scrollspy na nawigacji, czyli do podświetlania nazw sekcji w której aktualnie się znajdujesz</a>
+            <a class="nav-item" href="#apartaments">apartamenty</a>
             <a href="./atrakcje.html">atrakcje</a>
-            <a href="#gallery">galeria</a>
-            <a href="#contact">kontakt</a>
+            <a class="nav-item" href="#gallery">galeria</a>
+            <a class="nav-item" href="#contact">kontakt</a>
         </div>
     </nav>
 
     <!--HEADER-->
-    <header class="header">
+    <header class="header section" id="header">
         <div class="header__img">
             <div class="header__shadow"></div>
         </div>
@@ -72,13 +74,12 @@
     <main>
 
         <!--APARTAMENTS-->
-        <section class="apartaments section-padding" id="apartaments">
+        <section class="apartaments section-padding section" id="apartaments">
             <div class="wrapper">
                 <div class="apartaments__box">
                     <div class="apartaments__box--left">
                         <div class="underline"></div>
                         <h2 class="apartaments__heading section-heading">Apartamenty</h2>
-
                         <p class="apartaments__description">
                             Domki znajdują się w świetnej
                             lokalizacji - <b>15 min pieszo od Energylandii</b>. W okolicy dostępnych jest wiele
@@ -90,16 +91,6 @@
                             - <b>Zamek Lipowiec</b> w Babicach, <br>
                             - <b>Muzeum Auschwitz-Birkenau</b> w Oświęcimiu. <br> <br>
                             Niezapomniane wrażenia gwarantowane! Nocleg w cenie <b>123zł</b> za dobę.
-
-                            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                            quos quis impedit optio ut beatae a velit corporis quo explicabo? Dicta quibusdam sed ut.
-                            Incidunt enim omnis expedita dolorum esse porro. Tenetur adipisci aliquam rerum quo et, illo
-                            dicta, libero officiis quam earum cupiditate obcaecati voluptate nihil odio iusto non
-                            voluptatum architecto nam ducimus veritatis accusantium facere deserunt quia! Laborum
-                            dolores asperiores deleniti? Quis repellendus exercitationem amet doloremque minus ut
-                            excepturi dolore saepe sequi possimus distinctio, illo aliquid inventore omnis sunt placeat
-                            iste doloribus vel iusto nostrum atque molestias commodi fuga. Odit voluptatum unde, facilis
-                            rerum ratione cupiditate aliquam pariatur. -->
                         </p>
                     </div>
                     <div class="apartaments__box--right">
@@ -143,12 +134,12 @@
                         <img src="./static/img/apartaments/apartaments_description_main_small.jpeg"
                             alt="Zdjęcie przedstawiające apartament z zewnątrz">
                     </div>
-
                 </div>
             </div>
         </section>
+        
         <!--GALLERY-->
-        <section class="gallery section-padding" id="gallery">
+        <section class="gallery section-padding section" id="gallery">
             <div class="wrapper">
                 <h2 class="gallery__heading section-heading">Galeria</h2>
                 <div class="underline"></div>
@@ -164,17 +155,16 @@
         </section>
 
         <!--CONTACT-->
-        <section class="contact" id="contact">
+        <section class="contact section" id="contact">
             <div class="contact__shadow"></div>
             <div class="wrapper">
                 <h2 class="contact__heading section-heading">Kontakt</h2>
                 <div class="underline"></div>
                 <div class="contact__box">
                     <div class="contact__box--first">
-                        <a href=""><i class="fa-solid fa-location-dot"></i><p>ul. Sosnowa 24, Zator</p></a>
+                        <a target="_blank" href="https://www.google.com/maps?q=sosnowa+24+zator&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjAj6jD8J_4AhVcBhAIHdydA5UQ_AUoAXoECAEQAw"><i class="fa-solid fa-location-dot"></i><p>ul. Sosnowa 24, Zator</p></a>
                     </div>
                     <div class="contact__box--second">
-                        
                         <a href=""><i class="fa-brands fa-facebook"></i><p>Odwiedź nasz fanpage!</p></a>
                     </div>
                     <div class="contact__box--third">
@@ -217,7 +207,7 @@
                         <a href="">logo</a>
                     </div>
                     <div class="footer__box--social">
-                        <a href=""><i class="fa-solid fa-location-dot"><p>Sosnowa 24, Zator</p></i></a>
+                        <a target="_blank" href="https://www.google.com/maps?q=sosnowa+24+zator&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjAj6jD8J_4AhVcBhAIHdydA5UQ_AUoAXoECAEQAw"><i class="fa-solid fa-location-dot"><p>Sosnowa 24, Zator</p></i></a>
                         <a href=""><i class="fa-solid fa-mobile-screen"><p>123 456 789</p></i></a>
                         <a href=""><i class="fa-brands fa-facebook-f"><p> fanpage</p></i></a>
                     </div>
@@ -237,6 +227,7 @@
     <!--MY SCRIPTS-->
     <script src="./static/js/main.js"></script>
     <script src="./static/js/is_IOS.js"></script>
+    <script src="./static/js/scrollspy.js"></script>
 </body>
 
 </html>
