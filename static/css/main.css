@@ -653,6 +653,11 @@ body {
 }
 
 /*GALLERY*/
+.gallery {
+  background-image: url("../img/atractions/Shiny Overlay.svg");
+  background-size: cover;
+}
+
 .gallery__heading {
   color: #000;
   text-align: center;
@@ -858,28 +863,6 @@ body {
   color: #fff;
   z-index: 2;
   cursor: pointer;
-}
-
-.reach-us__box--right .contact-form .submit::after {
-  content: '';
-  position: absolute;
-  background-color: #ff4141;
-  height: 1em;
-  width: 30px;
-  left: -2px;
-  top: 50%;
-  z-index: -1;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-}
-
-.reach-us__box--right .contact-form .submit:hover::after, .reach-us__box--right .contact-form .submit:focus:after {
-  -webkit-transform: scale(1.3, 2);
-          transform: scale(1.3, 2);
 }
 
 /*FOOTER*/
