@@ -507,6 +507,11 @@ body {
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+.freetime__box--right img:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 50%);
+          clip-path: circle(120% at 50% 50%);
+}
+
 .freetime__box--right .fa-circle-question {
   position: absolute;
   top: 10px;
@@ -520,11 +525,6 @@ body {
 
 .freetime__box--right .fa-circle-question::before {
   padding: 10px;
-}
-
-.freetime__box--right .fa-circle-question:hover ~ .text {
-  -webkit-clip-path: circle(120% at 50% 50%);
-          clip-path: circle(120% at 50% 50%);
 }
 
 .freetime__box--right .text {
