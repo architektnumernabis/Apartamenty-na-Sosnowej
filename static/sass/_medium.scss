@@ -10,11 +10,6 @@
     .nav-mobile {
         padding: 0 2em;
     }
-    .nav-mobile-items {
-        a {
-            font-size: 2rem;
-        }
-    }
 
     /*HEADER*/
     .header {
@@ -208,10 +203,10 @@
 
 @media(min-width: 768px) {
 
-    /*NAVIGATION-MOBILE*/
+    /*NAVIGATION*/
     .nav-mobile-items {
-        a {
-            font-size: 2.5rem;
+        .nav-mobile-item {
+            font-size: 3rem;
         }
     }
 

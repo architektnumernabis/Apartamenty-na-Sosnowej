@@ -16,4 +16,5 @@ function iOS() {
 if (iOS() == true) {
     document.getElementById("apartament-details").style.backgroundAttachment = "scroll";
     document.getElementById("contact").style.backgroundAttachment = "scroll";
+    document.getElementById("contact-form").style.height = "110%";
 }

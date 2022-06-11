@@ -275,9 +275,9 @@ body {
                     padding: 10px;
                 }
 
-                // &:hover~.text {
-                //     clip-path: circle(120% at 50% 50%);
-                // }
+                &:hover~.text {
+                    clip-path: circle(120% at 50% 50%);
+                }
             }
 
             .text {
@@ -520,7 +520,7 @@ body {
                 z-index: -2;
                 padding: 1em;
                 border-radius: 8px;
-                height: 110%;
+                height: 100%;
                 width: 80%;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
 
