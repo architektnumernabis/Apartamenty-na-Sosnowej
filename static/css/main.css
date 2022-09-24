@@ -147,11 +147,6 @@
   overflow: hidden;
 }
 
-.hamburger--emphatic .hamburger-inner {
-  -webkit-transition: background-color 0.125s 0.175s ease-in;
-  transition: background-color 0.125s 0.175s ease-in;
-}
-
 .hamburger--emphatic .hamburger-inner::before {
   left: 0;
   -webkit-transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
@@ -197,6 +192,14 @@
   transition: right 0.125s ease-out, top 0.05s 0.125s linear, -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hamburger-black {
+  background-color: #2a2a29;
+}
+
+.hamburger-black::before, .hamburger-black::after {
+  background-color: #2a2a29;
 }
 
 /*COMMON CLASSES*/

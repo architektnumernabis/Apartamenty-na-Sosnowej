@@ -1,10 +1,12 @@
 const navMobile = document.querySelector('.nav-mobile-items')
 const burgerIcon = document.querySelector('.hamburger')
+const hamburgerInner = document.querySelector('.hamburger-inner')
 const navMobileItems = document.querySelectorAll('.nav-mobile-item')
 const navbar = document.querySelectorAll('.nav-desktop')
 const footerYear = document.querySelector('.footer__year')
 const navDesktopImg = document.querySelector('.logo-desktop')
 const navMobileImg = document.querySelector('.logo-mobile')
+const allSectionsOnPage = document.querySelectorAll('.section')
 
 //FUNCTION THAT HANDLES MOBILE NAVIGATION
 const handleNav = () => {
@@ -47,8 +49,6 @@ const navShowLogo = () => {
 
 document.addEventListener('scroll', navShowLogo)
 
-
-
 //FUNCTION THAT DELETES BLACK COLOR ON ACTIVE MOBILE MENU
 const mobileRemoveBlack = () => {
     navbar.forEach(item => {
@@ -69,3 +69,18 @@ const changeFooterYear = () => {
 }
 
 changeFooterYear();
+
+//FUNCTION THAT CHANGES BURGER BTN COLOR
+const observer = () => {
+    const currentSection = window.scrollY
+
+    allSectionsOnPage.forEach(section => {
+        if(section.classList.contains('white-section') && section.offsetTop <= currentSection + 58.5) {
+            hamburgerInner.classList.add('hamburger-black')
+        } else if (!section.classList.contains('white-section') && section.offsetTop <= currentSection + 58.5) {
+            hamburgerInner.classList.remove('hamburger-black')
+        }
+    })
+}
+
+window.addEventListener('scroll', observer)

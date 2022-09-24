@@ -83,7 +83,7 @@
 }
 
 .hamburger--emphatic .hamburger-inner {
-    transition: background-color 0.125s 0.175s ease-in;
+    //transition: background-color 0.125s 0.175s ease-in;
 }
 
 .hamburger--emphatic .hamburger-inner::before {
@@ -115,4 +115,13 @@
     top: -80px;
     transform: translate3d(-80px, 80px, 0) rotate(-45deg);
     transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hamburger-black {
+    background-color: $navbar-color;
+
+    &::before,
+    &::after {
+        background-color: $navbar-color;
+    }
 }
