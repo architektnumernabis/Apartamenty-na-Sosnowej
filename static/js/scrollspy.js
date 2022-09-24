@@ -1,4 +1,4 @@
-const allSections = document.querySelectorAll('.section')
+const allSections = document.querySelectorAll('.section-spy')
 const navMobileItemsForScrollSpy = document.querySelectorAll('.mobile-item')
 const navItemsForScrollSpy = document.querySelectorAll('.nav-item')
 

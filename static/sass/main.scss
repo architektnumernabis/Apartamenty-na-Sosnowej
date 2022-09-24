@@ -25,6 +25,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.body-no-scroll {
+    overflow-y: hidden;
+}
+
 .underline {
     margin: 0 auto;
     width: 60px;

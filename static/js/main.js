@@ -13,6 +13,7 @@ const handleNav = () => {
     navMobile.classList.toggle('active')
     burgerIcon.classList.toggle('is-active')
     navMobileImg.classList.toggle('invisible')
+    document.body.classList.toggle('body-no-scroll')
 
     navMobileItems.forEach(item => {
         item.addEventListener('click', () => {
