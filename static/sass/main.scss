@@ -32,6 +32,10 @@ body {
     background-color: $accentColor;
 }
 
+.logo {
+    width: 150px;
+}
+
 /*NAVIGATION-MOBILE*/
 .nav {
     position: fixed;
@@ -55,12 +59,17 @@ body {
     }
 
     .invisible {
-        display: none;
+        visibility: hidden;
+    }
+
+    .logo-mobile {
+        width: 120px;
+        transition: visibility .1s;
     }
 }
 
 .black {
-    background-color: $darker-shadow;
+    background-color: $navbar-color;
 }
 
 .nav-mobile {
@@ -97,6 +106,15 @@ body {
 .nav-desktop {
     display: none;
     padding: 0 10em;
+
+    .logo-desktop {
+        width: 150px;
+    }
+
+    .nav-logo {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /*HEADER*/
@@ -594,7 +612,7 @@ body {
 
 /*FOOTER*/
 .footer {
-    background-color: $darker-shadow;
+    background-color: $navbar-color;
     color: $whiteColor;
 
     &__box {

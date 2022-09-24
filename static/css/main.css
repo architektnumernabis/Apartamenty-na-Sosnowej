@@ -217,6 +217,10 @@ body {
   background-color: #ff4141;
 }
 
+.logo {
+  width: 150px;
+}
+
 /*NAVIGATION-MOBILE*/
 .nav {
   position: fixed;
@@ -244,11 +248,17 @@ body {
 }
 
 .nav .invisible {
-  display: none;
+  visibility: hidden;
+}
+
+.nav .logo-mobile {
+  width: 120px;
+  -webkit-transition: visibility .1s;
+  transition: visibility .1s;
 }
 
 .black {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #2a2a29;
 }
 
 .nav-mobile {
@@ -301,6 +311,15 @@ body {
 .nav-desktop {
   display: none;
   padding: 0 10em;
+}
+
+.nav-desktop .logo-desktop {
+  width: 150px;
+}
+
+.nav-desktop .nav-logo {
+  padding: 0;
+  margin: 0;
 }
 
 /*HEADER*/
@@ -894,7 +913,7 @@ body {
 
 /*FOOTER*/
 .footer {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #2a2a29;
   color: #fff;
 }
 
@@ -963,7 +982,7 @@ body {
 }
 
 .footer__bottom-text {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.902);
   color: #828282;
   padding: 1.5em;
   text-align: center;
@@ -976,6 +995,9 @@ body {
 /*BREAKPOINTS*/
 @media (min-width: 375px) {
   /*NAVIGATION*/
+  .nav-mobile .logo-mobile {
+    width: 140px;
+  }
   .nav-mobile-items .nav-mobile-item {
     font-size: 2rem;
   }
@@ -1034,6 +1056,9 @@ body {
   /*NAVIGATION-MOBILE*/
   .nav-mobile {
     padding: 0 2em;
+  }
+  .nav-mobile .logo-mobile {
+    width: 150px;
   }
   /*HEADER*/
   .header__text {
@@ -1160,6 +1185,9 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+  .footer__box--logo .logo-footer {
+    width: 200px;
+  }
   .footer__box--social {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -1198,6 +1226,9 @@ body {
 
 @media (min-width: 768px) {
   /*NAVIGATION*/
+  .nav-mobile .logo-mobile {
+    width: 200px;
+  }
   .nav-mobile-items .nav-mobile-item {
     font-size: 3rem;
   }
@@ -1321,6 +1352,10 @@ body {
   .reach-us__box--right .contact-form .submit {
     right: 20px;
     bottom: 20px;
+  }
+  /*FOOTER*/
+  .footer__box--logo .logo-footer {
+    width: 230px;
   }
 }
 
@@ -1468,6 +1503,7 @@ body {
         grid-template-rows: 0;
   }
   .footer__box--logo {
+    display: inherit;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

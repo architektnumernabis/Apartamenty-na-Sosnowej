@@ -1,25 +1,29 @@
 const navMobile = document.querySelector('.nav-mobile-items')
 const burgerIcon = document.querySelector('.hamburger')
 const navMobileItems = document.querySelectorAll('.nav-mobile-item')
-const navbar = document.querySelectorAll('.nav')
+const navbar = document.querySelectorAll('.nav-desktop')
 const footerYear = document.querySelector('.footer__year')
+const navDesktopImg = document.querySelector('.logo-desktop')
+const navMobileImg = document.querySelector('.logo-mobile')
 
 //FUNCTION THAT HANDLES MOBILE NAVIGATION
 const handleNav = () => {
     navMobile.classList.toggle('active')
     burgerIcon.classList.toggle('is-active')
+    navMobileImg.classList.toggle('invisible')
 
     navMobileItems.forEach(item => {
         item.addEventListener('click', () => {
             navMobile.classList.remove('active')
             burgerIcon.classList.remove('is-active')
+            navMobileImg.classList.add('invisible')
         })
     })
 }
 
 burgerIcon.addEventListener('click', handleNav)
 
-//FUNCTION THAT CHANGES NAVBA COLOR DEPENDING ON WINDOWSCROLLY
+//FUNCTION THAT CHANGES NAVBAR COLOR DEPENDING ON WINDOWSCROLLY
 const navChangeColor = () => {
     navbar.forEach(item => {
         if (window.scrollY >= 73 && !navMobile.classList.contains('active')) {
@@ -31,6 +35,19 @@ const navChangeColor = () => {
 }
 
 document.addEventListener('scroll', navChangeColor)
+
+//FUNCTION THAT SHOWS NAVBAR LOGO DEPENDING ON WINDOWSCROLLY
+const navShowLogo = () => {
+    if (window.scrollY >= 77) {
+        navDesktopImg.classList.remove('invisible')
+    } else {
+        navDesktopImg.classList.add('invisible')
+    }
+}
+
+document.addEventListener('scroll', navShowLogo)
+
+
 
 //FUNCTION THAT DELETES BLACK COLOR ON ACTIVE MOBILE MENU
 const mobileRemoveBlack = () => {
@@ -48,7 +65,7 @@ burgerIcon.addEventListener('click', mobileRemoveBlack)
 //FUNCTION THAT CHANGES FOOTER YEAR
 const changeFooterYear = () => {
     const year = (new Date).getFullYear();
-    footerYear.innerText = year; 
+    footerYear.innerText = year;
 }
 
 changeFooterYear();

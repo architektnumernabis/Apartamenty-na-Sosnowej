@@ -9,6 +9,10 @@
     /*NAVIGATION-MOBILE*/
     .nav-mobile {
         padding: 0 2em;
+
+        .logo-mobile {
+            width: 150px;
+        }
     }
 
     /*HEADER*/
@@ -174,10 +178,13 @@
             &--logo {
                 grid-column: 1/3;
                 grid-row: 1/2;
+
+                .logo-footer {
+                    width: 200px;
+                }
             }
 
             &--social {
-                //align-items: start;
                 grid-column: 1/2;
                 grid-row: 2/3;
             }
@@ -204,6 +211,12 @@
 @media(min-width: 768px) {
 
     /*NAVIGATION*/
+    .nav-mobile {
+        .logo-mobile {
+            width: 200px;
+        }
+    }
+
     .nav-mobile-items {
         .nav-mobile-item {
             font-size: 3rem;
@@ -347,6 +360,19 @@
                         right: 20px;
                         bottom: 20px;
                     }
+                }
+            }
+        }
+    }
+
+    /*FOOTER*/
+    .footer {
+        &__box {
+
+            &--logo {
+
+                .logo-footer {
+                    width: 230px;
                 }
             }
         }
@@ -512,6 +538,7 @@
             grid-template-rows: 0;
 
             &--logo {
+                display: inherit;
                 align-items: center;
                 justify-content: center;
                 grid-column: 1/2;

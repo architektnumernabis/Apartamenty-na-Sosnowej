@@ -7,12 +7,17 @@
 @media(min-width: 375px) {
 
     /*NAVIGATION*/
+    .nav-mobile {
+        .logo-mobile {
+            width: 140px;
+        }
+    }
+
     .nav-mobile-items {
         .nav-mobile-item {
             font-size: 2rem;
         }
     }
-
 
     /*HEADER*/
     .header {
