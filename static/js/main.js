@@ -20,6 +20,7 @@ const handleNav = () => {
             navMobile.classList.remove('active')
             burgerIcon.classList.remove('is-active')
             navMobileImg.classList.add('invisible')
+            document.body.classList.remove('body-no-scroll')
         })
     })
 }
