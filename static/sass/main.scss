@@ -133,7 +133,7 @@ body {
 
     &__img {
         position: relative;
-        background-image: url('../img/header/header_mini.jpeg');
+        background-image: url('../img/header/header_mini.jpg');
         background-size: cover;
         background-position: center;
         grid-row: 1/2;
@@ -377,6 +377,7 @@ body {
 
         &--left {
             display: grid;
+            align-content: center;
             grid-template-columns: repeat(2, 1fr);
             color: $whiteColor;
 

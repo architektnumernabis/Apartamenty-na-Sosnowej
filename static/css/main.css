@@ -345,7 +345,7 @@ body {
 
 .header__img {
   position: relative;
-  background-image: url("../img/header/header_mini.jpeg");
+  background-image: url("../img/header/header_mini.jpg");
   background-size: cover;
   background-position: center;
   -ms-grid-row: 1;
@@ -655,6 +655,8 @@ body {
 .apartaments-details__box--left {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   color: #fff;
@@ -1075,14 +1077,6 @@ body {
   .header__text .freetime-name {
     font-size: 5rem;
   }
-  .header__text .company-name::before {
-    content: 'Zator, ul. Sosnowa';
-    text-transform: none;
-    position: absolute;
-    bottom: -25px;
-    font-size: 2rem;
-    color: #828282;
-  }
   .header__text p {
     font-size: 2rem;
   }
@@ -1238,6 +1232,18 @@ body {
   }
   .nav-mobile-items .nav-mobile-item {
     font-size: 3rem;
+  }
+  /*HEADER*/
+  .header__img {
+    background-image: url("../img/header/header_big.jpg");
+  }
+  .header__text .company-name::before {
+    content: 'Zator, ul. Sosnowa';
+    text-transform: none;
+    position: absolute;
+    bottom: -25px;
+    font-size: 2rem;
+    color: #828282;
   }
   /*APARTAMENTS-DETAILS*/
   .apartaments-details__box--left {
@@ -1397,7 +1403,6 @@ body {
     color: #ff4141;
   }
   .header__img {
-    background-image: url("../img/header/header_big.jpeg");
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;

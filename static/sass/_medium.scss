@@ -25,18 +25,6 @@
                 font-size: 5rem;
             }
 
-            .company-name {
-
-                &::before {
-                    content: 'Zator, ul. Sosnowa';
-                    text-transform: none;
-                    position: absolute;
-                    bottom: -25px;
-                    font-size: 2rem;
-                    color: $descriptionColor;
-                }
-            }
-
             p {
                 font-size: 2rem;
             }
@@ -220,6 +208,27 @@
     .nav-mobile-items {
         .nav-mobile-item {
             font-size: 3rem;
+        }
+    }
+
+    /*HEADER*/
+    .header {
+        &__img {
+            background-image: url('../img/header/header_big.jpg');
+        }
+
+        &__text {
+            .company-name {
+
+                &::before {
+                    content: 'Zator, ul. Sosnowa';
+                    text-transform: none;
+                    position: absolute;
+                    bottom: -25px;
+                    font-size: 2rem;
+                    color: $descriptionColor;
+                }
+            }
         }
     }
 
@@ -409,7 +418,6 @@
 
     .header {
         &__img {
-            background-image: url('../img/header/header_big.jpeg');
             grid-column: 2/3;
             grid-row: 1/3;
         }
