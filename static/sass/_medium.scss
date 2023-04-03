@@ -57,6 +57,14 @@
     /*APARTAMENTS*/
     .apartaments {
 
+        &__box {
+            &--left {
+                .appartaments-button-cta {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
         &__description {
             font-size: 1.5rem;
         }

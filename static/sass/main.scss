@@ -243,12 +243,38 @@ body {
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
             }
         }
+
+        &--left {
+            .appartaments-button {
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                margin-top: 3em;
+            }
+
+            .appartaments-button-cta {
+                padding: 10px 10px;
+                background-color: $accentColor;
+                border: none;
+                border-radius: 5px;
+                color: $whiteColor;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: transform .3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 
     &__heading {
         padding: 0 0 1em 0;
         @include sectionHeading($blackColor);
     }
+
 }
 
 /*FREETIME - SUBSITE*/
